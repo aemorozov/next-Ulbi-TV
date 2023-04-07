@@ -7,8 +7,8 @@ const User = ({ user }) => {
             keywords={`${user.name}`}
             title={`${user.name}`}>
             <div className={styles.user}>
-                <h1>Пользователь c id {user.id}</h1>
-                <p>Имя пользователя {user.name}</p>
+                <h1 className='text-h1'>Пользователь c id {user.id}</h1>
+                <p className='text-p'>Имя пользователя {user.name}</p>
             </div>
         </MainContainer>
     )

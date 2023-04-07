@@ -6,9 +6,8 @@ const Index = () => {
         <MainContainer
             keywords={pageName}
             title={pageName}>
-            <h1>{pageName}</h1>
+            <h1 className="text-h1">{pageName}</h1>
         </MainContainer>
-
     )
 }
 

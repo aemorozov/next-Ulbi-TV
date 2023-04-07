@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react"
 import Link from 'next/link'
 import MainContainer from "../components/MainContainer"
 
@@ -6,7 +5,7 @@ const Users = (users) => {
     const pageName = 'Список пользователей'
     return (
         <MainContainer keywords={pageName} title={pageName}>
-            <h1>{pageName}</h1>
+            <h1 className='text-h1'>{pageName}</h1>
             <ul>
                 {users.users.map(user =>
                     <li key={user.id}>
