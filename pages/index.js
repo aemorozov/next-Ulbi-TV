@@ -1,22 +1,14 @@
-import Links from "../components/links"
+import MainContainer from "../components/MainContainer"
 
 const Index = () => {
+    const pageName = 'Главная'
     return (
-        <div>
-            <div className="navbar">
-                <Links href='/' text='Главная' />
-                <Links href='/users' text='Пользователи' />
-            </div>
-            <h1>Главная страница</h1>
-            <style jsx>
-                {`
-                    .navbar {
-                        background: orange;
-                        padding: 15px;
-                    }
-                `}
-            </style>
-        </div>
+        <MainContainer
+            keywords={pageName}
+            title={pageName}>
+            <h1>{pageName}</h1>
+        </MainContainer>
+
     )
 }
 

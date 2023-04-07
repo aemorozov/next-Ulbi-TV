@@ -1,11 +1,16 @@
+import MainContainer from '../../components/MainContainer'
 import styles from '../../styles/user.module.scss'
 
 const User = ({ user }) => {
     return (
-        <div className={styles.user}>
-            <h1>Пользователь c id {user.id}</h1>
-            <p>Имя пользователя {user.name}</p>
-        </div>
+        <MainContainer
+            keywords={`${user.name}`}
+            title={`${user.name}`}>
+            <div className={styles.user}>
+                <h1>Пользователь c id {user.id}</h1>
+                <p>Имя пользователя {user.name}</p>
+            </div>
+        </MainContainer>
     )
 }
 
