@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev"
+    "dev": "npm run deleteWebpackCache && npm run open-browser && next dev",
+    "open-browser": "start http://localhost:3000",
+    "deleteWebpackCache": "rd /s /q .next"
   },
   "keywords": [],
   "author": "",
